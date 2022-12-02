@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 18</title>
+</head>
+<body>
+
+<script>
+	//Q1 - Write a function that takes your name and age as an input parameter and print it by using string concatenation.
+
+	function introduction(name,age){
+		var name=name;
+		var age=age;
+		console.log("name "+name+" age "+ age);
+	}
+	introduction("sumair",21);
+
+	//Q2 Write a function name ‘Double’ that takes an input parameter and multiply that parameter by 2 and store the result in a variable and call the function by passing an argument.
+
+		function Double(num_1){
+		var result=num_1*2;
+		console.log(result);
+	}
+	Double(20);
+
+	// Q3 - Write a function to print the square of a number by using function expression and that function can be used as variable value for other variables.
+
+	  var square=function addsquare(number){
+ 		return number**2;
+  };
+  		console.log(square(10));
+
+  		// Q4 - Write an arrow function as an expression to check the age of the baby . If the age of the baby is less than 18 print Baby else print adult.
+
+
+  		var age=myfunc = (age) => {
+    if(age>=18){
+    	console.log('you are adult');
+    }
+    else{
+    	console.log('you are baby')
+    }
+    return true;
+}
+
+console.log(age(18));
+
+// Q5 - Write an arrow function and print a sum of two numbers by passing a single parameter
+// inside the arrow function.
+
+        function add(x){
+            console.log(x + arguments[1])
+
+        }
+
+        add(10,20);
+
+// Q6 - Write an object ‘cities’ and loop values of the object's properties by using for... in Loop and print them.
+
+var cities = [];
+let no=prompt('How many cities name do u want to print')
+for(var i = 0; i <=no.length; i++) {
+    cities.push(prompt("Enter the cities name"));
+    console.log(cities);
+
+}
+
+//Q7 - Write a for...of loop to traverse the array and print the elements of an array with indices.
+
+const iterable = [10, 20, 30];
+let count=0;
+
+for (const value of iterable) {
+  console.log(count,value);
+  count++;
+}
+
+// Q8 Write an unnamed /anonymous function which calculates the area of a rectangle.
+
+
+let area = function(length, breadth){
+    return length * breadth 
+}
+let r = area(10,5) 
+console.log("Area of the rectangle is = ",r);
+
+
+
+
+</script>
+
+</body>
+</html>
